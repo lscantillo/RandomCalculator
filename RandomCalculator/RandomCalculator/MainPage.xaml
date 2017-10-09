@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RandomCalculator"
+             x:Class="RandomCalculator.MainPage">
+
+    <StackLayout >
+
+
+        <Label Text="Ingrese su nombre"></Label>
+
+        <Entry Placeholder="Nombre"></Entry>
+        <Picker x:Name="picker" Title="Seleccionar cantidad de operaciones">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>3</x:String>
+                    <x:String>5</x:String>
+                    <x:String>10</x:String>
+                    
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+        <Button
+        x:Name="btnstart" Text="Comenzar" Clicked="Clickstart" ></Button>
+
+        </StackLayout>
+
+   
+    
+
+</ContentPage>
